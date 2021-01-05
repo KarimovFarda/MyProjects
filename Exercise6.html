@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercise 6</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e636c2e107.js" crossorigin="anonymous"></script>
+
+ <link rel="stylesheet" href="Exercise6css.css"> 
+</head>
+<body>
+    <nav>
+    <ul>
+ <li><a href="#" id="brand">Karimov Consulting</a> </li>
+<li><a href="#"> Log in</a></li>
+<li><a href="#"> Clients</a></li>
+<li><a href="#"> Good To Know</a></li>
+<li><a href="#"> Projects</a></li> 
+  <li><a href="#"> Services</a></li>
+  <li><a href="#"> About</a></li>
+</ul>
+
+
+    </nav>
+<div class="image">
+ 
+</div>
+
+
+<div class="phrase">
+    <h3> DEVELOPING INNOVATIVE STRATEGIES
+    </h3>
+<h1> ACHIEVING GROWTH
+</h1>
+</div>
+
+<div class="boxes">
+<div class="box1">
+    <h1> SERVICES</h1>
+    <p> I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.
+
+        ​</p>
+        <a href="#"> More Info</a>
+</div>
+<div class="box2">
+    <h1> PROJECTS</h1>
+    <p> I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.
+
+        ​</p>
+        <a href="#"> More Info</a>
+
+</div>
+<div class="box3">
+    <h1> CLIENTS</h1>
+    <p> I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.
+
+        ​</p>
+        <a href="#"> More Info</a>
+
+</div>
+
+</div>
+<div class="about">
+    <h1> ABOUT US
+    </h1>
+    <p> I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.    
+      ​</p>
+      <p>This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. </p>
+        <a href="#"> More Info</a>
+
+
+
+
+
+</div>
+<div class="form">
+   
+<h1>CONTACT US
+</h1>
+<h2>500 Terry Francois Street, San Francisco, CA 94158
+
+    info@mysite.com  Tel: 123-456-7890</h2>
+<form>
+<label> First Name*</label>
+<input type="text" id="fname" placeholder="First Name">
+<label> Last Name*</label>
+<input type="text" id="lname" placeholder="Last Name">
+<label>Email*</label> 
+<input type="text" id="email" placeholder="Email">
+<label> Subject*</label>
+<input type="text" id="subject" placeholder="Subject">
+<label> Message*</label>
+<textarea id="message" onmousedown="deletetext()"> Type your message here...</textarea>
+<input type="submit" onclick="checkform()" value="Submit">
+</form> 
+
+</div>
+
+<script>
+var firstname = document.getElementById("fname");
+var lastname = document.getElementById("lname");
+var email = document.getElementById("email");
+var message = document.getElementById("message");
+
+firstname.style.color="darkblue";
+lastname.style.color="darkblue";
+email.style.color="darkblue";
+firstname.style.fontSize = "16px";
+lastname.style.fontSize = "16px";
+email.style.fontSize = "16px";
+subject.style.fontSize = "16px";
+message.style.fontSize = "16px"
+
+function checkform(){
+    if(firstname.value == ""){
+        alert("Form should be filled")
+    }else if(firstname.value.indexOf("ə") >= 0 || firstname.value.indexOf("ı") >= 0 || firstname.value.indexOf("ü") >= 0  
+    || firstname.value.indexOf("ö") >= 0  || firstname.value.indexOf("ğ") >= 0 || firstname.value.indexOf("ç") >= 0 || firstname.value.indexOf("ş") >= 0 ){
+        alert("Use English Alphabet")
+    }else if(lastname.value == ""){
+        alert("Form should be filled")
+    }else if(lastname.value.indexOf("ə") >= 0 || lastname.value.indexOf("ı") >= 0 || lastname.value.indexOf("ü") >= 0  
+    || lastname.value.indexOf("ö") >= 0  || lastname.value.indexOf("ğ") >= 0 || lastname.value.indexOf("ç") >= 0 || lastname.value.indexOf("ş") >= 0 ){
+        alert("Use English Alphabet")
+    }else if(email.value.indexOf("@") < 0){
+        alert("Enter the valid email");
+    }else{
+        console.log("Email is right");
+    }
+    
+}
+function deletetext(){
+    return message.value = "";
+}
+
+
+</script>
+</body>
+</html>

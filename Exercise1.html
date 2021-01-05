@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Exercise 1 </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="title" content="Exercise">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+
+	 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e636c2e107.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+
+</head>
+    <style>
+
+
+   body{
+   	background-color: #eee;
+   } 	
+ html{
+ 	font-size:10px;
+
+ }
+ *{
+ 	box-sizing:border-box;
+ 	margin:0;
+ 	padding:0;
+ }
+nav img{
+	width:20%;
+	padding-top:1rem;
+	margin-left:1%;
+	
+}
+nav{
+	width:100%;
+	height:7rem;
+	
+	position:relative;
+	margin-bottom:0.7rem;
+
+}
+.break{
+	width:100%;
+	color:black;
+	margin-bottom:0.35rem;
+}
+#first{
+position:absolute;
+top:2.5rem;
+font-size:3.7rem;
+left:30rem;
+}
+.link1{
+position:absolute;
+top:1.5rem;
+font-size:1.4rem;
+font-weight:bold;
+left:35rem;
+}
+#second{
+position:absolute;
+top:2.5rem;
+font-size:3.7rem;
+left:60rem;
+}
+.link2{
+position:absolute;
+top:1.5rem;
+font-size:1.4rem;
+font-weight:bold;
+left:65rem;
+}
+#third{
+position:absolute;
+top:2.5rem;
+font-size:3.7rem;
+left:90rem;
+}
+.link3{
+position:absolute;
+top:1.5rem;
+font-size:1.4rem;
+font-weight:bold;
+left:95rem;
+}
+#fourth{
+	position:absolute;
+top:2.5rem;
+font-size:3rem;
+left:114rem;
+}
+#fifth{
+	position:absolute;
+top:2.5rem;
+font-size:3rem;
+left:119rem;
+}
+#sixth{
+	position:absolute;
+top:2.5rem;
+font-size:3rem;
+left:125rem;
+}
+@media screen and (max-width:900px){
+	.links{
+		display:none;
+	}
+	nav img{
+		width:32%;
+	}
+}
+@media screen and (max-width:650px){
+	nav img{
+		width:50%;
+	}
+
+}
+
+ul{
+	list-style-type:none;
+	display:inline;
+}
+li{
+	display:inline;
+	
+}
+ul li a{
+	text-decoration:none;
+	color:black;
+	font-size:1.7rem;
+	padding-right:1.2rem;
+
+
+
+}
+ul li a:hover{
+	text-decoration: none;
+	color:#38c04d;
+	font-size:2rem;
+}
+ul li a:first-child{
+	padding-left:1rem;
+
+}
+@media screen and (max-width:1000px){
+	ul li a{
+	font-size:1.45rem;
+}
+ ul li a:hover{
+ 	font-size:1.45rem;
+ }
+
+}
+@media screen and (max-width:700px){
+	ul li a{
+	display:none;
+
+}
+
+}
+
+
+.head{
+width:100%;
+height:80rem;
+z-index:-1;
+position:relative;
+}
+
+.image h2,.image h1{
+position:relative;
+bottom:48rem;
+color:white;
+
+}
+.image{
+	margin-top:0.4rem;
+	height:60rem
+	;
+}
+.image h2{
+font-size:4.5rem;
+padding-left:5rem;
+
+}
+.image h1{
+font-size:6.5rem;
+padding-left:5rem;
+}
+.form{
+	width:29%;
+	height:40rem;
+	background-color:#fff;
+	position:relative;
+	bottom:70rem;
+	left:90rem;
+	padding-top:1.5rem;
+	border-radius:7px;
+	box-shadow: 2px 2px 5px #ddd;
+}
+.form label{
+	margin-left:33%;
+	font-size:2.2rem;
+	font-weight: bold;
+}
+
+.form input[type="text"],.form input[type="email"],.form input[type="tel"]{
+	display:block;
+	width:80%;
+	height:5rem;
+	margin:2rem auto;
+	background-color:#F8F8F8;
+	font-size:2rem;
+	color:black;
+	border-radius:5px;
+	border:none;
+	outline:none;
+}
+.form input[type="submit"]{
+	background-color:#41E063;
+	color:white;
+	display:block;
+	width:80%;
+	height:5rem;
+	margin:3rem auto;
+	font-size:2.2rem;
+
+	border-radius:5px;
+
+}
+input[type="submit"]{
+	background-color:#41E063;
+	color:white;
+
+	display:inline-block;
+	width:30%;
+	height:5rem;
+	margin-left:5rem;
+	font-size:2rem;
+	margin-top:3rem;
+	border-radius:5px;
+}
+@media screen and (max-width:1200px){
+	.form{
+		display:none;
+	}
+
+
+}
+.contain{
+	width:100%;
+display: block;
+margin-top:23rem;
+	
+}
+.contain h2{
+
+text-align:center;
+font-size:3.8rem;
+margin:3.5rem 0 5rem 0;
+}
+.col{
+	width:30%;
+	float:left;
+	height:21rem;
+	overflow:hidden;
+	margin-left:3%;
+	padding:0.5rem;
+}
+@media screen and (max-width:1000px){
+	.col{
+		width:45%;
+		height:17rem;
+	}
+
+}
+@media screen and (max-width:880px){
+	.col{
+		width:45%;
+		height:21rem;
+	}
+
+}
+@media screen and (max-width:680px){
+	.col{
+		width:45%;
+		height:25rem;
+	}
+
+}
+@media screen and (max-width:550px){
+	.col{
+		width:90%;
+		height:13.5rem;
+	}
+}
+.col h4{
+	font-size:2.5rem;
+	margin-bottom:1rem;
+}
+.col h4:hover{
+	cursor:pointer;
+	color:#38c04d;
+}
+.col p:hover{
+	font-weight: bold;
+}
+.col p{
+	font-size:1.5rem;
+		margin-bottom:1rem;
+}
+.selection{
+	display:inline-block;
+	width:100%;
+}
+.first{
+  background-color:#FFFFFF;
+  width:41%;
+  margin-top:3rem;
+    box-shadow: 5px 5px 5px #888;
+float:left;
+border-radius:8px;
+margin-left:7.8%;
+transition:margin-top 0.4s;
+}
+.first:hover{
+	margin-top:2.3rem;
+}
+.second{
+	width:41%;
+	background-color: #fff;
+	border-radius:8px;
+	margin-top:3rem;
+     box-shadow: 5px 5px 5px #888;
+	float:left;
+	margin-left:3%;
+	margin-top:3rem;
+	transition:margin-top 0.4s;
+}
+.second:hover{
+	margin-top:2.3rem;
+}
+@media screen and (max-width:800px){
+	.first{
+		width:90%;
+	}
+	.second{
+		width:90%;
+		margin-left:8%;
+	}
+}
+.first p,.first h2{
+text-align:center;
+font-size:2.7rem;
+margin-bottom:1rem;
+}
+.first h2{
+	padding-top:1.5rem;
+}
+.second h2{
+	padding-top:1.5rem;
+}
+.first p{
+	margin-top:0.3rem;
+}
+.first i{
+display:inline-block;
+
+margin-left:50%;
+
+font-size:3.7rem;
+}
+.second p,.second h2{
+text-align:center;
+font-size:2.7rem;
+margin-bottom:1rem;
+}
+.second p{
+	margin-top:0.3rem;
+}
+.second i{
+display:inline-block;
+
+margin-left:50%;
+
+font-size:3.5rem;
+}
+.first{
+	background-color:#fff;
+}
+.first .bttn{
+width:90%;
+	background-color:#41E063;
+	text-decoration: none;
+	color:white;
+	display:block;
+	text-align:center;
+	margin:2.8rem auto;
+	cursor:pointer;
+	border-radius:10px;
+	font-size:2.8rem;
+	padding:1.5rem 0;
+}
+.second .bttn{
+	width:90%;
+	background-color:#41E063;
+	text-decoration: none;
+	color:white;
+	display:block;
+	text-align:center;
+	margin:2.8rem auto;
+	cursor:pointer;
+	border-radius:10px;
+	font-size:2.6rem;
+	padding:1.5rem 0;
+}
+
+
+
+/*
+
+	width:41%;
+	background-color: #fff;
+	border-radius:8px;
+	margin-top:3rem;
+     box-shadow: 5px 5px 5px #888;
+	float:left;
+	margin-left:3%;
+	margin-top:3rem;
+	transition:margin-top 0.4s;
+
+
+
+	width:35%;
+ background-color:#fff;
+	
+	height:3.5rem;
+	font-size:2rem;
+	text-align:center;
+  margin-left:5%;
+	border-radius:2px;
+	box-shadow:5px 5px 5px #888;
+	float:left;
+	margin-bottom:10rem;
+
+
+	*/
+
+.about{
+	width:90%;
+	display:block;
+	border-radius:7px;
+	margin-left:5%;
+	margin-bottom:2rem;
+	
+}
+.content{
+	width:100%;
+}
+.about h1{
+	text-align:center;
+	margin:3rem 0 5rem 0;
+	font-size:3.5rem;
+}
+.about img{
+	float:left;
+	display:inline-block;
+	width:45%;
+	margin:3rem auto;
+	border-radius:3%;
+	margin-top:0;
+
+}
+.about p{
+	float:left;
+	width:50%;
+	font-size:2rem;
+	margin-left:3%;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+
+}
+.about a{
+	text-decoration: none;
+	color:black;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	display:block;
+	font-size:2rem;
+
+}
+.about a:hover{
+	color:#41e063;
+}
+@media screen and (max-width:900px){
+	.about img{
+		width:90%;
+		margin-left:7%;
+	}
+	.about p{
+		width:90%;
+		margin-left:7%;
+	}
+}
+.stage{
+	display:block;
+	width:100%;
+
+}
+.column{
+background-color:#fff;
+box-shadow: 5px 5px 5px #888;
+width:30%;
+height:75vh;
+border-radius:10px;
+float:left;
+margin:5px;
+margin-left:2.3%;
+display:inline-block;
+}
+
+.clearfix{
+content:"";
+clear:both;
+display:inline-block;
+}
+
+.column img{
+width:67%;
+display:block;
+margin:0 auto;
+}
+.column h3{
+text-align:center;
+font-size:4rem;
+
+
+}
+
+.column p{
+	text-align: center;
+	font-size:1.9rem;
+
+}
+@media screen and (max-width:900px){
+	.column{
+		width:90%;
+		display:block;
+		height:95vh;
+		margin-left:6%;
+		margin-bottom:3rem;
+	
+	}
+	.column img{
+		width:52%;
+		margin:0 auto;
+		display:block;
+	}
+}
+@media screen and (max-width:600px){
+	.column{
+		width:90%;
+		display:block;
+		height:65vh;
+		margin-left:6%;
+		margin-bottom:3rem;
+	
+	}
+	.column img{
+		width:52%;
+		margin:0 auto;
+		display:block;
+	}
+}
+
+
+.stage h1{
+text-align:center;
+font-size:4.5rem;
+margin:4rem 0;
+}
+.foot{
+	width:100%;
+	display:block;
+}
+.part1{
+	width:40%;
+	display:inline-block;
+	float:left;
+  margin-top:6rem;
+}
+
+.part1 img{
+ width:55%;
+ margin-left: 2rem;
+ margin-bottom:3rem;
+}
+.part1 p{
+	display:block;
+	font-size:1.8rem;
+	margin-top:0.5rem;
+	margin-left: 3.5rem;
+}
+.part2{
+	width:25%;
+	float:left;
+	  margin-top:7rem;
+	  margin-left: 3.5rem;
+}
+.part2 p{
+	display:block;
+		font-size:1.8rem;
+}
+.part2 p:first-child{
+	font-weight: bold;
+}
+.part3{
+	width:25%;
+	float:left;
+	  margin-top:7rem;
+	  margin-left: 3.5rem;
+}
+.part3 p{
+	display:block;
+		font-size:1.8rem;
+}
+.part3 p:first-child{
+	font-weight: bold;
+}
+@media screen and (max-width:700px){
+.part1{
+	width:100%;
+	margin-top:1rem;
+}
+
+.part2{
+	margin-top:1rem;
+	width:100%;
+}
+.part3{
+	width:100%;
+	margin-top:1rem;
+}
+
+}
+
+
+   </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+	<!-- <i class="fas fa-phone"></i>  
+<i class="fas fa-map-marker-alt"></i>
+<i class="fas fa-clock"></i>
+	-->
+<header>
+<nav>
+<h1 style="font-size:5.5rem"> MY LOGO </h1>
+<div class="links">
+ <i id="first" class="fas fa-phone"></i>  
+ <span class="link1">
+    <p> 0559490455 </p>
+    <p> ferdakerim@gmail.com</p>
+ </span>
+</div>
+<div class="links">
+ <i id="second" class="fas fa-map-marker-alt"></i>  
+ <span class="link2">
+    <p> Baku E.Guliev st home 5 </p>
+    <p> Baku,Azerbaijan </p>
+ </span>
+</div>
+<div class="links">
+ <i id="third" class="fas fa-clock"></i> 
+ <span class="link3">
+    <p> Activity </p>
+    <p> 7/24</p>
+ </span>
+</div>
+<div class="links">
+
+	<i id="fourth" class="fab fa-facebook-f"></i>
+	<i id="fifth" class="fab fa-instagram"></i>
+	<i id="sixth" class="fab fa-linkedin-in"></i>
+
+</div>
+</nav>
+<hr class="break">
+<div class="list">
+<ul>
+	<li><a href="#">  Main Page </a></li>
+		<li> <a href="#">    About me</a> </li>
+			<li> <a href="#"> Advantages </a></li>
+				
+					<li> <a href="#">   Education </a></li>
+						<li> <a href="#">   Application process </a></li>
+							<li><a href="#">    Contact </a></li>
+</ul>
+
+</div>
+
+
+
+
+
+<div class="image">
+
+	<!-- https://assets.iwgplc.com/image/upload/Regus/Website/homepage-product-office-space.jpg
+https://eatsleepworkrepeat.com/wp-content/uploads/2020/06/office.jpg
+
+https://assets.iwgplc.com/image/upload/Regus/Website/homepage-product-office-space.jpg
+
+https://media.istockphoto.com/photos/employees-using-computers-in-dark-office-picture-id557608477?k=6&m=557608477&s=170667a&w=0&h=Ew5qQnnz3oEnCz5DxlW5dkHBpOFxrrxhL9JSzUJGRic=
+
+	 -->
+	<img class="head" src="https://media.istockphoto.com/photos/employees-using-computers-in-dark-office-picture-id557608477?k=6&m=557608477&s=170667a&w=0&h=Ew5qQnnz3oEnCz5DxlW5dkHBpOFxrrxhL9JSzUJGRic=
+" alt="">
+<h2>Front-end Web Developer</h2>
+<h1>Karimov Farda</h1>
+<div class="form">
+<form>
+<label> Application</label>
+<input type="text" placeholder="Name*">
+<input type="email" placeholder="Email*">
+<input type="tel" placeholder="Number*">
+<input type="submit" value="Submit">
+</form>
+
+</div>
+</div>
+
+</header>
+<main>
+<div class="contain">
+<h2>Advantages</h2>
+<div class="col">
+<h4>Lorem ipsum dolor sit amet.Lorem</h4>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti reiciendis in dolores saepe necessitatibus tempore nesciunt, molestias ut aliquid sit minima delectus, suscipit velit dicta numquam, quod id repudiandae porro.
+</p>
+</div>
+<div class="col">
+<h4>Lorem ipsum dolor sit.
+</h4>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eum natus, sint doloremque at adipisci laboriosam aliquid autem ut ratione tenetur, nostrum voluptas sapiente! Illum vero iste ducimus, explicabo odio animi consequatur in commodi! Ab officiis neque aspernatur possimus nemo?
+
+</p>
+
+</div>
+<div class="col">
+<h4>Lorem ipsum dolor sit.
+</h4>
+<p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero nam saepe fugit eligendi fugiat, provident in quasi. Id voluptas quaerat ad voluptates repellat magnam alias nobis. Id deserunt nostrum quam doloribus saepe sint, possimus aliquam.
+</p>
+
+</div>
+<div class="col">
+<h4>Lorem ipsum dolor sit.
+</h4>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nisi perferendis maxime facilis ratione porro sint rem nemo repudiandae ex voluptates itaque tempore ipsam fuga, accusamus optio consequatur veritatis numquam?
+
+</p>
+
+</div>
+<div class="col">
+<h4>Lorem ipsum dolor sit amet.
+</h4>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quasi ullam sit modi libero expedita, qui est eum similique quo quisquam quos consequatur architecto ipsam fugit molestias.
+
+</p>
+
+</div>
+<div class="col">
+<h4>Lorem, ipsum dolor.
+</h4>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nesciunt eveniet ut neque quaerat unde labore obcaecati earum. Blanditiis rem veritatis quo possimus sapiente cumque.
+
+</p>
+
+</div>
+
+</div>
+<br><br>
+<div class="selection">
+<div class="first"> 
+<h2> Frontend Development</h2>
+<i class="fas fa-angle-double-down"></i>
+<p> Foundation </p>
+<i class="fas fa-angle-double-down"></i>
+<p> HTML & CSS </p>
+<i class="fas fa-angle-double-down"></i>
+<p> Javascript(React) </p>
+<i class="fas fa-angle-double-down"></i>
+<p> Cybersecurity for Developers </p>
+<i class="fas fa-angle-double-down"></i>
+<p> DevSecOps </p>
+<a href="#" class="bttn"> Learn More </a>
+
+</div>
+<div class="second">
+<h2> Backend Development</h2>
+<i class="fas fa-angle-double-down"></i>
+<p> Foundation </p>
+<i class="fas fa-angle-double-down"></i>
+<p> Python(Django) </p>
+<p> PHP(Laravel) </p>
+<p> C#(.NET Core) </p>
+<i class="fas fa-angle-double-down"></i>
+<p> Cybersecurity for Developers </p>
+<i class="fas fa-angle-double-down"></i>
+<p> DevSecOps </p>
+<a href="#" class="bttn"> Learn More </a>
+ </div>
+	</div>
+
+<div class="about">
+<h1> About me</h1>
+<div class="clearfix">
+<img src="https://www.pragmatech.az/static/assets/images/bg/home-processing-video-intro-slider-slide-01-image-01-570x350.jpg">
+<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, sit voluptatem quidem pariatur ipsam harum neque! Dolore corrupti, in, voluptatem aliquam sint, harum recusandae voluptates voluptatum quasi obcaecati molestiae dolorum tempore vero iure omnis cum temporibus blanditiis nostrum eligendi. Architecto fugit ut ab nobis odio dicta exercitationem aliquid quia laboriosam suscipit, deserunt, nihil natus placeat blanditiis cum voluptates eum? Voluptas ratione sunt, impedit dolorem ipsum odio exercitationem tempora praesentium ad modi officiis corporis enim id veniam necessitatibus, vero rem mollitia.
+</p>
+<p><a href="#"> Learn More &rarr; </a></p> 
+
+</div>
+
+</div>
+
+<div class="stage">
+<h1> Application Process </h1>
+
+<div class="column">
+	<img src="https://www.pragmatech.az/static/assets/images/icons/musahibe.svg">
+	<h3> Interview </h3>
+	<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ducimus praesentium quas architecto. </p>
+
+
+</div>
+<div class="column">
+	<img src="https://www.pragmatech.az/static/assets/images/icons/ingilis.svg">
+	<h3>  English test  </h3>
+	<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic veritatis illo similique placeat fuga doloremque
+ </p>
+
+</div>
+<div class="column">
+	<img src="https://www.pragmatech.az/static/assets/images/icons/texniki.svg">
+	<h3>  Technical Test </h3>
+	<p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed nihil magni non.
+</p>
+</div>
+</div>
+
+</main>
+
+<footer>
+<div class="foot">
+<div class="part1">
+	
+<img src="https://www.pragmatech.az/static/assets/images/logo/logo.png">
+<p>Baku E.Guliev st home 5
+</p>
+<p> ferdakerim@gmail.com </p>
+<p> 055 949 04 55</p>
+
+	</div>
+	<div class="part2">
+      <p> Lorem, ipsum. </p>
+        <p> <a href="#" style="color:black;text-decoration: none;">About Us </a></p>
+          <p> <a href="#" style="color:black;text-decoration: none;">Advantages</a> </p>
+            <p> <a href="#" style="color:black;text-decoration: none;"> Education </a></p>
+              <p> <a href="#" style="color:black;text-decoration: none;"> Application Process </a></p>
+                <p> <a href="#" style="color:black;text-decoration: none;"> Contact </a></p>
+
+	</div>
+	<div class="part3">
+    <p> Web Development</p>
+    <p><a href="#" style="color:black;text-decoration: none;">Front-End Development</a></p>
+    <p><a href="#" style="color:black;text-decoration: none;">Back-End Development</a> </p>
+
+	</div>
+</div>
+
+</div>
+
+</footer>
+
+	</body>
+
+</html>
+
+
+<!-- <i class="fas fa-angle-double-down"></i>
+
+.one{
+	
+	height:200px;
+		
+
+}
+.one img{
+	width:45%;
+
+}
+.one p{
+	display:block;
+	font-size:1.8rem;
+
+}
+.two{
+	background-color:green;
+	height:200px;
+	
+}
+.three{
+	background-color:blue;
+	height:200px;
+
+}
+
+ -->
